@@ -25,6 +25,10 @@ title: Home
 <td><ul><li><a href="https://doi.org/10.3390/jmmp9090288">Journal Paper: Carbon Fiber-Reinforced PLA Composites, JMMP 2025</a><br><small>(external doi.org)</small></li></ul></td>
 <td><ul><li><a href="https://doi.org/10.1115/IMECE2024-145944">Conference Paper: Infill Percentage vs. Nozzle Diameter, ASME IMECE 2024</a><br><small>(external doi.org)</small></li></ul></td>
 </tr>
+<tr>
+<td><ul><li><a href="https://doi.org/10.1115/IMECE2025-165930">Conference Paper: Tribology of 3D-Printed PETG/PTFE Composites, ASME IMECE 2025</a><br><small>(external doi.org)</small></li></ul></td>
+<td></td>
+</tr>
 {% if site.email != "" or site.linkedin != "" or site.github != "" %}
 <tr>
 <td>{% if site.email != "" %}<ul><li><a href="mailto:{{ site.email }}">Email: {{ site.email }}</a></li></ul>{% endif %}</td>

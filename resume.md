@@ -97,6 +97,15 @@ Chester, PA &middot; <a href="mailto:{{ site.email }}">{{ site.email }}</a> &mid
 <li>Turned the findings into a framework for balancing repeatability, quality, and print time.</li>
 </ul>
 
+<table class="entry"><tr><td><b>Tribological Properties of 3D-Printed PETG/PTFE Composites</b></td><td class="date">2025</td></tr></table>
+<p class="meta">Co-author and technical advisor. ASME IMECE 2025 conference paper. <a href="https://doi.org/10.1115/IMECE2025-165930">doi.org/10.1115/IMECE2025-165930</a></p>
+<ul>
+<li>Technical advisor for sample printing and material behavior analysis on a study of friction and strength in a 90% PETG / 10% PTFE FDM composite.</li>
+<li>Directed the print settings for all samples, varying wall count and top surface line width.</li>
+<li>Predicted results, then analyzed the test results to show how friction and strength related to the print settings.</li>
+<li>The study found that wall count set a trade-off: one wall gave lower friction than four walls, and more walls gave higher tensile strength. Top surface line width had a negligible effect on friction.</li>
+</ul>
+
 <table class="entry"><tr><td><b>In-Situ Electroplating FDM Prototype</b></td><td class="date"></td></tr></table>
 <p class="meta">Automation project.</p>
 <ul>
@@ -143,6 +152,7 @@ Chester, PA &middot; <a href="mailto:{{ site.email }}">{{ site.email }}</a> &mid
 <h2>Publications</h2>
 
 <p class="pub">[1] <b>B. Blake</b>, R. Mendenhall, and B. Eslami, &ldquo;Balancing Strength and Flexibility: Mechanical Characterization of Carbon Fiber-Reinforced PLA Composites in FDM 3D Printing,&rdquo; <i>Journal of Manufacturing and Materials Processing</i>, vol. 9, no. 9, p. 288, 2025. <a href="https://doi.org/10.3390/jmmp9090288">doi.org/10.3390/jmmp9090288</a>. Cited 16 times (Crossref).</p>
-<p class="pub">[2] O. Watson, <b>B. Blake</b>, S. Pagano, and B. Eslami, &ldquo;Optimization of Infill Percentage Versus Nozzle Diameter in Fused Deposition Modeling 3D Printing,&rdquo; in <i>Proc. ASME IMECE 2024</i>, vol. 2: Advanced Manufacturing. <a href="https://doi.org/10.1115/IMECE2024-145944">doi.org/10.1115/IMECE2024-145944</a>.</p>
+<p class="pub">[2] N. Hryniewicz, J. Kadam, M. Da Silva Cardoso, <b>B. Blake</b>, and B. Eslami, &ldquo;Optimizing the Tribological Properties of 3D-Printed PETG/PTFE Composites,&rdquo; in <i>Proc. ASME IMECE 2025</i>, vol. 9, paper V009T16A004. <a href="https://doi.org/10.1115/IMECE2025-165930">doi.org/10.1115/IMECE2025-165930</a>.</p>
+<p class="pub">[3] O. Watson, <b>B. Blake</b>, S. Pagano, and B. Eslami, &ldquo;Optimization of Infill Percentage Versus Nozzle Diameter in Fused Deposition Modeling 3D Printing,&rdquo; in <i>Proc. ASME IMECE 2024</i>, vol. 2: Advanced Manufacturing. <a href="https://doi.org/10.1115/IMECE2024-145944">doi.org/10.1115/IMECE2024-145944</a>.</p>
 
 </div>
