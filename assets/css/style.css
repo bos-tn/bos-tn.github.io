@@ -89,3 +89,22 @@ table.facts td { vertical-align: top; }
   td.thumb img, .noimg { width: 94px; }
   .noimg { padding: 22px 0; }
 }
+
+/* Resume page */
+.resume h2 { font-size: 1.1em; margin: 1.4em 0 0.4em; padding-bottom: 2px; border-bottom: 1px solid #808080; text-transform: uppercase; letter-spacing: 0.04em; }
+.resume p { margin: 0.3em 0; }
+.resume .meta { font-size: 0.9em; margin: 0.15em 0; }
+table.entry { width: 100%; border-collapse: collapse; margin-top: 0.7em; }
+table.entry td { padding: 0; vertical-align: baseline; }
+table.entry td.date { text-align: right; white-space: nowrap; padding-left: 1em; font-size: 0.9em; }
+.resume ul { margin: 0.2em 0 0.3em; padding-left: 22px; }
+.resume li { margin-bottom: 0.15em; }
+table.skills { border-color: #808080; width: 100%; }
+table.skills th { text-align: left; vertical-align: top; background: #e4e4e4; width: 30%; }
+table.skills td { vertical-align: top; }
+.pub { padding-left: 2em; text-indent: -2em; }
+
+@media (max-width: 560px) {
+  table.entry td { display: block; text-align: left !important; padding-left: 0 !important; }
+  table.skills th, table.skills td { display: block; width: auto; }
+}
