@@ -1,0 +1,7 @@
+{% assign p = include.project %}<tr>
+<td class="thumb">{% if p.hero %}<a href="{{ p.url | relative_url }}"><img src="{{ p.hero | relative_url }}" alt="{{ p.hero_alt }}" width="160" loading="lazy"></a>{% else %}<span class="noimg">[figure<br>pending]</span>{% endif %}</td>
+<td class="desc"><a href="{{ p.url | relative_url }}"><b>{{ p.title }}</b></a>{% if p.updated %} <small>(updated {{ p.updated | date: "%b %-d, %Y" }})</small>{% endif %}<br>
+{{ p.hook }}
+{% if p.role or p.timeframe %}<br><small>{% if p.role %}Role: {{ p.role }}{% endif %}{% if p.role and p.timeframe %} &middot; {% endif %}{{ p.timeframe }}</small>{% endif %}
+{% if p.skills %}<br><small>Skills: {{ p.skills | join: ", " }}</small>{% endif %}</td>
+</tr>

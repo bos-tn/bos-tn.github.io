@@ -1,0 +1,38 @@
+title: Boston Blake
+tagline: Mechanical Engineer, R&D Prototyping and Test
+location: Widener University, Chester, Pennsylvania
+since: 2023               # first year in the copyright line
+description: Engineering projects, analysis, and writing by Boston Blake.
+author: Boston Blake
+email: bablake@widener.edu
+linkedin: https://www.linkedin.com/in/bostn
+github: bos-tn
+
+# For a user site (username.github.io) leave baseurl empty.
+# For a project site (username.github.io/portfolio) set baseurl: /portfolio
+url: https://bos-tn.github.io
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

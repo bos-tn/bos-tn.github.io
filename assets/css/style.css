@@ -1,0 +1,91 @@
+/*
+  Old-internet style, modeled on berkshirehathaway.com.
+  Browser-default look on purpose: Times, black on white, blue underlined
+  links, horizontal rules, and bordered HTML tables. No web fonts, no
+  rounded corners, no shadows, no JavaScript.
+*/
+
+body {
+  margin: 0;
+  padding: 10px 14px 24px;
+  background: #ffffff;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.page { max-width: 780px; margin: 0 auto; }
+
+a:link { color: #0000ee; }
+a:visited { color: #551a8b; }
+a:active { color: #ee0000; }
+
+hr { border-style: inset; border-width: 1px; margin: 14px 0; }
+
+h1 { font-size: 1.6em; margin: 0.4em 0 0.3em; }
+h2 { font-size: 1.25em; margin: 1.6em 0 0.4em; }
+h3 { font-size: 1.05em; margin: 1.3em 0 0.3em; }
+
+small, .small { font-size: 0.85em; }
+.center { text-align: center; }
+
+/* Header block on the home page */
+.home-head { text-align: center; }
+.home-head p { margin: 18px 0 10px; line-height: 1.5; }
+.home-head .big { font-size: 1.55em; letter-spacing: 0.02em; }
+
+/* Header on inner pages */
+.masthead { text-align: center; margin: 12px 0 4px; }
+.masthead a { color: #000000; text-decoration: none; }
+.navbar { text-align: center; margin: 4px 0 0; }
+
+/* Two-column link table, as on the Berkshire page */
+table.links { margin: 0 auto; border-collapse: collapse; }
+table.links td { vertical-align: top; width: 50%; padding: 5px 18px; }
+table.links ul { margin: 0; padding-left: 20px; list-style-type: disc; }
+
+.intro { margin: 0 auto; max-width: 680px; }
+
+.section-title { text-align: center; margin: 6px 0 12px; letter-spacing: 0.04em; }
+
+/* Project listing tables */
+table.projects { width: 100%; border-color: #808080; }
+table.projects td { vertical-align: top; }
+td.thumb { width: 164px; text-align: center; }
+td.thumb img { display: block; width: 160px; height: auto; border: 1px solid #808080; }
+.noimg { display: block; width: 160px; padding: 36px 0; color: #808080; font-size: 0.85em; border: 1px dashed #a0a0a0; }
+
+.notice { text-align: center; margin: 0 auto; max-width: 680px; }
+
+.footer { text-align: center; font-size: 0.85em; margin: 6px 0 0; }
+
+/* Case-study pages */
+.crumb { font-size: 0.85em; margin: 8px 0 0; }
+.hook { margin: 0 0 12px; }
+
+table.facts { border-color: #808080; margin: 0 0 16px; }
+table.facts th { text-align: left; vertical-align: top; background: #e4e4e4; width: 110px; font-weight: bold; }
+table.facts td { vertical-align: top; }
+
+.hero { display: block; width: 100%; max-height: 640px; object-fit: contain; border: 1px solid #808080; background: #000000; }
+
+.case-body img { max-width: 100%; height: auto; }
+.case-body figure { margin: 22px 0; text-align: center; }
+.case-body figure img { display: block; margin: 0 auto; max-height: 640px; border: 1px solid #808080; }
+.case-body figcaption { font-size: 0.85em; margin-top: 5px; }
+.case-body table { border-collapse: collapse; margin: 8px 0 16px; }
+.case-body th, .case-body td { border: 1px solid #808080; padding: 3px 7px; text-align: left; vertical-align: top; }
+.case-body th { background: #e4e4e4; }
+.case-body code { font-family: "Courier New", Courier, monospace; }
+
+.back { margin-top: 22px; }
+
+/* Narrow screens */
+@media (max-width: 560px) {
+  body { font-size: 16px; padding: 8px 10px 20px; }
+  table.links td { display: block; width: auto; padding: 4px 6px; }
+  td.thumb { width: 98px; }
+  td.thumb img, .noimg { width: 94px; }
+  .noimg { padding: 22px 0; }
+}

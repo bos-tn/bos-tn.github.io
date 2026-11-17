@@ -1,0 +1,43 @@
+---
+layout: default
+---
+{% if page.section == "systems" %}{% assign back_url = '/systems/' %}{% assign back_name = 'Systems &amp; Leadership' %}{% else %}{% assign back_url = '/projects/' %}{% assign back_name = 'Engineering Projects' %}{% endif %}
+<article class="case-study">
+<p class="crumb"><a href="{{ back_url | relative_url }}">{{ back_name }}</a> &gt; {{ page.title }}</p>
+<h1>{{ page.title }}</h1>
+<p class="hook">{{ page.hook }}</p>
+
+<table class="facts" border="1" cellpadding="4" cellspacing="0">
+{% if page.role %}<tr><th>Role</th><td>{{ page.role }}</td></tr>{% endif %}
+{% if page.timeframe %}<tr><th>Timeframe</th><td>{{ page.timeframe }}</td></tr>{% endif %}
+{% if page.tools %}<tr><th>Tools</th><td>{{ page.tools | join: ", " }}</td></tr>{% endif %}
+{% if page.skills %}<tr><th>Skills</th><td>{{ page.skills | join: ", " }}</td></tr>{% endif %}
+{% if page.updated %}<tr><th>Updated</th><td>{{ page.updated | date: "%B %-d, %Y" }}</td></tr>{% endif %}
+</table>
+
+{% if page.hero_video %}
+<video class="hero" autoplay muted loop playsinline preload="metadata" poster="{{ page.hero | relative_url }}" aria-label="{{ page.hero_alt }}">
+<source src="{{ page.hero_video | relative_url }}" type="video/mp4">
+</video>
+{% elsif page.hero %}<img class="hero" src="{{ page.hero | relative_url }}" alt="{{ page.hero_alt }}">{% endif %}
+
+<hr>
+
+<div class="case-body">
+{{ content }}
+</div>
+
+{% if page.docs_on_request.size > 0 or page.code_url %}
+<hr>
+<div class="on-request">
+<p><b>DOCUMENTS</b></p>
+{% if page.docs_on_request.size > 0 %}
+<p>Available by email on request{% if site.email != "" %} at <a href="mailto:{{ site.email }}?subject={{ page.title | url_encode }}">{{ site.email }}</a>{% endif %}:</p>
+<ul>{% for d in page.docs_on_request %}<li>{{ d }}</li>{% endfor %}</ul>
+{% endif %}
+{% if page.code_url %}<p><a href="{{ page.code_url }}">Source code</a></p>{% endif %}
+</div>
+{% endif %}
+
+<p class="back"><a href="{{ back_url | relative_url }}">&lt;&lt; Back to {{ back_name }}</a></p>
+</article>

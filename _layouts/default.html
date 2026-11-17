@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.url == "/" %}{{ site.title | upcase }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
+<meta name="description" content="{{ page.hook | default: site.description }}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+<div class="page">
+{% unless page.url == "/" %}
+<p class="masthead"><a href="{{ '/' | relative_url }}"><b>{{ site.title | upcase }}</b></a><br>{{ site.tagline }}</p>
+<p class="navbar">[ <a href="{{ '/' | relative_url }}">Home</a> | <a href="{{ '/projects/' | relative_url }}">Engineering Projects</a> | <a href="{{ '/systems/' | relative_url }}">Systems &amp; Leadership</a> | <a href="{{ '/resume/' | relative_url }}">Resume</a> | <a href="{{ '/about/' | relative_url }}">About</a> ]</p>
+<hr>
+{% endunless %}
+{{ content }}
+<hr>
+<p class="footer">Copyright &copy; {{ site.since }}&ndash;{{ site.time | date: "%Y" }} <b>{{ site.author }}</b><br>
+This page last updated {{ site.time | date: "%B %-d, %Y" }}.</p>
+</div>
+</body>
+</html>
